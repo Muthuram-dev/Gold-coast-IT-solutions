@@ -30,5 +30,5 @@ Tasks are stored using **in-memory storage** (no database).
   
 1. **pip install -r requirements.txt**
 2. **python app.py**
-
+3. **Copy paste the localhost link from the terminal to view the project.**
 ---

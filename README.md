@@ -24,16 +24,8 @@ Tasks are stored using **in-memory storage** (no database).
 - **Testing:** pytest  
 - **Storage:** In-memory dictionary
 
+# Installation guide
+
+- **pip install -r requirements.txt**
+
 ---
-
-## API Endpoints
-
-### Create Task
-**POST** `/tasks`
-
-**Request**
-```json
-{
-  "title": "Buy milk",
-  "description": "2 litres"
-}

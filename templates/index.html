@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Task Manager</title>
+    <link rel="stylesheet" href="/static/styles.css?v=3">
+    <script src="/static/app.js?v=3"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="app-container">
+
+        <h1>Mini Task Manager</h1>
+
+
+        <div class="card">
+            <h2>Create Task</h2>
+            <div class="form-group">
+                <input id="title" placeholder="Task title">
+                <input id="description" placeholder="Description (optional)">
+                <button onclick="createTask()">Add Task</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="tasks-header">
+                <h2>Tasks</h2>
+
+                <select id="filter" onchange="loadTasks()">
+                    <option value="">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

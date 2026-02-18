@@ -26,6 +26,7 @@ Tasks are stored using **in-memory storage** (no database).
 
 # Installation guide
 
+- Make sure to have **pip** installed in your device and run the following command
 - **pip install -r requirements.txt**
 
 ---

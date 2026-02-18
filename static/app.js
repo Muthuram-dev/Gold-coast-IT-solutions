@@ -110,7 +110,7 @@ function enableEdit(btn) {
 }
 
 function cancelEdit(btn) {
-    loadTasks();  // reload from backend → discard changes
+    loadTasks();  
 }
 
 async function saveEdit(id, btn) {

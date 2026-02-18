@@ -5,6 +5,7 @@ import itertools
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
 tasks = {}
+
 id_counter = itertools.count(1)
 
 VALID_STATUS = {"pending", "in-progress", "completed"}

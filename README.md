@@ -24,9 +24,10 @@ Tasks are stored using **in-memory storage** (no database).
 - **Testing:** pytest  
 - **Storage:** In-memory dictionary
 
-# Installation guide
-
+## Instructions to run app & tests
+- git clone https://github.com/Muthuram-dev/Gold-coast-IT-solutions
 - Make sure to have **pip** installed in your device and run the following command
 - **pip install -r requirements.txt**
+- **python app.py**
 
 ---

@@ -1,12 +1,14 @@
 import pytest
-from app import app, tasks
+from app import app, reset_state
+
 
 @pytest.fixture
 def client():
     app.config["TESTING"] = True
     with app.test_client() as client:
-        tasks.clear()
+        reset_state()  
         yield client
+
 
 def test_create_task(client):
     res = client.post("/tasks", json={"title": "Test"})

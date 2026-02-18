@@ -8,9 +8,14 @@ tasks = {}
 id_counter = itertools.count(1)
 
 VALID_STATUS = {"pending", "in-progress", "completed"}
-    
+
 def utc_now():
     return datetime.now(timezone.utc).isoformat()
+
+def reset_state():
+    global tasks, id_counter
+    tasks.clear()
+    id_counter = itertools.count(1)
 
 @app.route("/")
 def index():
@@ -78,3 +83,4 @@ def delete_task(task_id):
     
 if __name__ == "__main__":
     app.run(debug=True)
+

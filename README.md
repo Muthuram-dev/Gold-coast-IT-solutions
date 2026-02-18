@@ -32,3 +32,5 @@ Tasks are stored using **in-memory storage** (no database).
 2. **python app.py**
 3. **Copy paste the localhost link from the terminal to view the project.**
 ---
+- To run the tests, run the following command
+1. **pytest -v**
